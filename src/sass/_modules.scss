@@ -52,7 +52,7 @@ r
     @include center;
 }
 
-.petition-form-container{
+.petition-form-container, .signup-form-container{
     position: fixed;
     right: 0;
     left: 0;
@@ -63,7 +63,7 @@ r
     background:$form-container;
     border-radius: 5px;
 }
-.petition-form{
+.petition-form, .signup-form{
     @include center;
     width: 60%;
     background: #ffffff;

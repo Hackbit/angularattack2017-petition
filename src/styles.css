@@ -573,7 +573,7 @@ r
 	margin-left: auto;
 }
 
-.petition-form-container {
+.petition-form-container, .signup-form-container {
 	position: fixed;
 	right: 0;
 	left: 0;
@@ -586,7 +586,7 @@ r
 	border-radius: 5px;
 }
 
-.petition-form {
+.petition-form, .signup-form {
 	margin-right: auto;
 	margin-left: auto;
 	width: 60%;
@@ -595,7 +595,7 @@ r
 	overflow: hidden;
 }
 
-.petition-form__set {
+.petition-form__set, .signup-form__set {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 15px 20px 20px 20px;
@@ -603,7 +603,7 @@ r
 	border: none;
 }
 
-.petition-form__ipt {
+.petition-form__ipt, .signup-form__ipt {
 	margin-bottom: 10px;
 	padding: 15px 10px;
 	width: 100%;
@@ -612,7 +612,7 @@ r
 	border-radius: 2px;
 }
 
-.petition-form__btn {
+.petition-form__btn, .signup-form__btn {
 	padding: 20px 10px;
 	max-height: 70px;
 	width: 100%;
@@ -627,7 +627,7 @@ r
 	transition: all .5s ease-out;
 }
 
-.petition-form__btn:hover {
+.petition-form__btn:hover, .signup-form__btn:hover {
 	background: #90EE90;
 }
 
