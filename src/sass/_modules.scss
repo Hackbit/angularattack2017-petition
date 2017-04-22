@@ -1,4 +1,35 @@
+.navi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    @include center;
+    width: 80%;
+    height: inherit;
+    h1{
+        margin-top: 0px;
+        color: #015249;
+        line-height: 60px;
+    }
+}
 
+.menu{
+    display: flex;
+    margin-top: 0;
+    width: 300px;
+    height: inherit;
+    background: white;
+    &__item{
+        padding-right: 20px;
+        font-weight: bolder;
+        line-height: 60px;
+        a{
+            color: #a5a5af;
+            &:hover{
+                color: #696969;
+        }
+        }
+    }
+}
 
 .petition-name{
     margin: 0px;
@@ -25,10 +56,10 @@ r
     position: fixed;
     right: 0;
     left: 0;
-    margin-top: 100px;
+    margin-top: 130px;
     @include center;
     padding: 20px 20px;
-    width: 40%;
+    width: 35%;
     background:$form-container;
     border-radius: 5px;
 }

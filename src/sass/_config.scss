@@ -1,14 +1,25 @@
 
+//--------------------------------
+// Google Fonts Import
+//--------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700');
+
 
 //--------------------------------
 // Variables
 //--------------------------------
 
 $base-font-size: 16px;
+$font-body: 'Raleway', sans-serif;
+$font-headers:'Roboto', sans-serif;
 
 $app-background: linear-gradient(to left, #5F9EA0, #90EE90);
+
+$header-background: white;
+
 $background-name-color: #fff;
-$form-container: rgba(9,9,9,0.4);
+$form-container: rgba(9,9,9,0.3);
 
 $form-btn: #5F9EA0;
 $form-btn-hover: #90EE90;
