@@ -1,0 +1,32 @@
+
+
+.petition-name{
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    &__text{
+        margin: 0px;
+        color: orange;
+        font-weight: bolder;
+    }
+}
+
+.form-header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.petition-form{
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 350px;
+    background:gray;
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormCreatorComponent } from './components/petitionformcreator/petitionform';
+import { PetitionBackgroundComponent } from './components/petitionbackgroundlist/petitionbackground';
 
 @Component({
   moduleId: module.id,
