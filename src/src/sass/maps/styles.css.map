@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA;CACI,kBAAiB;CACpB;;AAGD;CACE,YAAY;CACZ,0CAA0C;CAC1C,gBAAgB;CACjB","file":"../../../styles.css","sourcesContent":["body{\r\n    background:black;\r\n}\r\n\r\n\r\nh1 {\r\n  color: #369;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  font-size: 250%;\r\n}"]}
