@@ -1,3 +1,11 @@
 {
-    "vsicons.presets.angular": true
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": {},
+        "**/*.map": {},
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    }
 }
