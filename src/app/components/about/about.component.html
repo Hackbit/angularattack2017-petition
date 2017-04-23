@@ -1,5 +1,17 @@
+<petition-background></petition-background>
 
-<section>
-<h1>About</h1>
+<section class="l-app-form">
+
+    <div class="petition-form-container">
+        <h1 class="form-header">About this site</h1>
+        <fieldset class="">
+            <h3>This site was created by the 3 amigos</h3> 
+            <ul class="devs">
+                <li *ngFor="let dev of devs">
+                    <span class="">{{ dev.name }} - {{ dev.email }}</span>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 
 </section>
