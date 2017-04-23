@@ -1,52 +1,50 @@
 import { Component } from '@angular/core';
+import { PostsService } from '../../services/posts.service';
 
 @Component({
   moduleId: module.id,
   selector: 'petition-background',
   templateUrl: `petitionbackground.html`,
+  providers: [PostsService]
 })
-export class PetitionBackgroundComponent  { 
 
-    names: string[];
+export class PetitionBackgroundComponent { 
+    posts: Post[];
     
-
-    constructor(){
-        this.names = [
-            "Eddie Solar", 
-            "Yaumel Betancourt", 
-            "Rafa", "Tony Romo", 
-            "Clark Kent", 
-            "Bruce Wayne", 
-            "Jennifer Lopez", 
-            "Superman", 
-            "Batman",
-            "Homer Simpson",
-            "Peter Griffin",
-            "Thor",
-            "Akmed Reyes",
-            "That guy",
-            "Ivana Tinkle",
-            " Solar", 
-            " Betancourt", 
-            "Rafael Sobrino",
-            "Des", 
-            " Kent", 
-            "Bruce Manor", 
-            "Wonder Woman", 
-            "Superman", 
-            "Robin",
-            "Bart",
-            "Blake Griffin",
-            "Miami Heat",
-            "NFL",
-            "Where's My Money",
-            "Ivana Tinkle",
-            "I'm tired",
-            "Eddie is the best",
-            "Barack Obama",
-            "Tony Stark",
-            "B Banner"
-            ]
+    constructor(private postsService: PostsService) {
+        this.postsService.getComments().subscribe(posts => {
+            this.posts = posts;
+        });
     }
+}
 
+interface geo {
+    lt: number;
+    lng: number;
+}
+
+interface address {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: geo;
+}
+
+interface Post {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    address: address;
+    phone: string;
+    website: string;
+}
+interface Post {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    phone: string;
+    website: string;    
 }
