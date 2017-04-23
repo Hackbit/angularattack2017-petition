@@ -15,7 +15,7 @@
 .menu{
     display: flex;
     margin-top: 0;
-    width: 300px;
+    width: 600px;
     height: inherit;
     background: white;
     &__item{
@@ -100,4 +100,21 @@ r
             background: $form-btn-hover;
         }
     }
+}
+
+
+.is-animated{
+    opacity: 0;
+    @for $i from 1 to 37{
+        &:nth-child(#{$i}){
+            animation: clear ease-out forwards;
+            animation-duration: 1s;
+            animation-delay: #{$i}s;
+        }
+    }
+}
+
+@keyframes clear { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
