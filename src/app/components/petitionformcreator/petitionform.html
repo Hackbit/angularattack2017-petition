@@ -6,13 +6,21 @@
         <h1 class="form-header">Petition Form Creator</h1>
         <form class="petition-form" action="">
             <fieldset class="petition-form__set">
-                <input class="petition-form__ipt" type="text" name="first_name" placeholder="First Name"><br>
-                <input class="petition-form__ipt" type="text" name="last_name" placeholder="Last Name"><br>
-                <input class="petition-form__ipt" type="text" name="petition_title" placeholder="Petition Title"><br>
-                <textarea class="petition-form__ipt" name="petition_body" id="petition_body" cols="30" rows="5"></textarea><br>
+                <input class="petition-form__ipt" type="text" name="first_name" placeholder="First Name" [(ngModel)]="firstName"><br>
+                <input class="petition-form__ipt" type="text" name="last_name" placeholder="Last Name" [(ngModel)]="lastName"><br>
+                <input class="petition-form__ipt" type="text" name="petition_title" placeholder="Petition Title" [(ngModel)]="petitionTitle"><br>
+                <textarea class="petition-form__ipt" name="petition_body" id="petition_body" cols="30" rows="5" [(ngModel)]="petitionBody"></textarea><br>
             </fieldset>
             <input class="petition-form__btn" type="submit" value="Create">
         </form>
     </div>
 
 </section>
+<div class="petition-live-demo">
+    <section id="demo">
+        <h1>{{petitionTitle}}</h1>
+        <h2>{{firstName}} {{lastName}}</h2>
+        <p>{{petitionBody}}</p>
+    </section>
+</div>
+

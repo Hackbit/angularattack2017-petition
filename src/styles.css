@@ -592,7 +592,7 @@ r
 	width: 60%;
 	background: #ffffff;
 	border-radius: 2px;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .petition-form__set, .signup-form__set {
@@ -629,6 +629,36 @@ r
 
 .petition-form__btn:hover, .signup-form__btn:hover {
 	background: #90EE90;
+}
+
+.petition-live-demo{
+	position: relative;
+	border-radius: 15px;
+	width: 800px;
+	/*height: 500px;*/
+	margin-top: 700px;
+	margin-left: 550px;
+	background: white;
+	z-index: 1;
+}
+
+#demo{
+	position: relative;
+	
+}
+#demo h1{
+	text-align: center;
+	color: black;
+	padding-top: 20px;
+}
+
+#demo h2{
+	text-align: center;
+}
+
+#demo p{
+	margin: 0 10px;
+	text-align: left;
 }
 
 /*# sourceMappingURL=src/sass/maps/styles.css.map */

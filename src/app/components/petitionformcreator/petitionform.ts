@@ -5,4 +5,17 @@ import { Component } from '@angular/core';
   selector: 'form-creator-component',
   templateUrl: `petitionform.html`,
 })
-export class FormCreatorComponent  { }
+export class FormCreatorComponent  { 
+  firstName: string;
+  lastName: string;
+  petitionTitle: string;
+  petitionBody: string;
+
+  constructor() {
+    
+  }
+
+  // clearPlaceHolder(){
+  //   document.querySelectorAll("input[type='text']").getAttribute();
+  // }
+}

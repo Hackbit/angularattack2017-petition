@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 import { NavigationComponent } from  './components/navigation/navi.component';
@@ -11,7 +12,7 @@ import { PetitionBackgroundComponent } from './components/petitionbackgroundlist
 import {routing} from './app.routing'
 
 @NgModule({
-  imports:      [ BrowserModule, routing ],
+  imports:      [ BrowserModule, FormsModule, routing ],
   declarations: [ AppComponent, NavigationComponent, FormCreatorComponent, FormSignupComponent, PetitionBackgroundComponent, AboutComponent ],
   bootstrap:    [ AppComponent ]
 })
