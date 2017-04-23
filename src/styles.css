@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700");
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -639,26 +641,37 @@ r
 	margin-top: 700px;
 	margin-left: 550px;
 	background: white;
-	z-index: 1;
 }
 
 #demo{
-	position: relative;
-	
+	position: relative;	
+	background: linear-gradient(to left, #ddd, #fff,  #ddd);
+	border-radius: 15px;
+}
+
+#demo h1, #demo h2{
+	font-family: 'Great Vibes', cursive;
+}
+
+#demo h2, #demo p{
+	text-align: left;
 }
 #demo h1{
 	text-align: center;
 	color: black;
 	padding-top: 20px;
+	font-size: 50px;
 }
 
 #demo h2{
-	text-align: center;
+	padding: 0 0 20px 20px;
+	border-bottom: black solid
 }
 
 #demo p{
-	margin: 0 10px;
-	text-align: left;
+	font-size: 20px;
+	padding: 0 20px;
+	font-family: 'Oswald', sans-serif;
 }
 
 /*# sourceMappingURL=src/sass/maps/styles.css.map */
